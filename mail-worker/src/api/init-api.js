@@ -9,7 +9,7 @@ app.get('/init/:secret', (c) => {
  * Deployment-only bootstrap. Remove immediately after the first successful initialization.
  * Does not change the JWT secret or user credentials.
  */
-app.get('/init/bootstrap-empty-database', async (c) => {
+app.get('/init/bootstrap/empty-database', async (c) => {
   if (await c.env.kv.get('setting:')) {
     return c.text('already initialized');
   }
