@@ -40,7 +40,7 @@ crons = ["0 * * * *"]
 
 [vars]
 domain = ["522661.xyz"]
-admin = "admin@522661.xyz"
+admin = "sxfd@522661.xyz"
 
 [build]
 command = "pnpm --dir ../mail-vue install --frozen-lockfile && pnpm --dir ../mail-vue run build"
